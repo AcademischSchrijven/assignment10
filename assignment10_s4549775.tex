@@ -7,6 +7,7 @@
 	language=Python,
 	breaklines=true,
 }
+\usepackage{multicol}
 
 \setlength\parskip{1em}
 \setlength\parindent{0em}
@@ -24,7 +25,7 @@ In this paper I present an easy to understand and follow approach to detect an o
 \section{Introduction}
 For a university project I wanted to detect the position of a robot and which way it was facing, as well as the position of a ball, using visual input. After looking into different computer vision frameworks I eventually chose OpenCV. I expected there to be some prebuilt functionality for something as mundane as detecting an arrow but was disappointed.
 
-In this article I want to present the approach I took to detect the features I needed; and how this was applied in a robotics project. This article is positioned as an introduction into image detection and does not assume familiarity with the subject. Concepts and terminology are introduced as needed; it serves as a quick overview over image detection and OpenCV in particular.
+In this article I present an approach to detect the features we needed; and how this was applied in a robotics project. This article is positioned as an introduction into image detection and does not assume familiarity with the subject. Concepts and terminology are introduced as needed; it serves as a quick overview over image detection and OpenCV in particular.
 
 \section{Problem}
 As input for my robot's decision making algorithm I need the position of the ball, as well as the position of the robot, and the direction it faces. The ball is round, so direction does not really apply to it.
@@ -192,5 +193,14 @@ Do not focus too much on the choice of languages though, not even the choice of 
 \printbibliography
 
 \section{Feedback taken into account}
+\begin{itemize}
+	\item Too many verbs.
+
+	\begin{multicols}{2}
+		\paragraph{before} In this article I want to present the approach I took to detect the features I needed.
+
+		\paragraph{after} In this article I present an approach to detect the features we needed.
+	\end{multicols}
+\end{itemize}
 
 \end{document}
