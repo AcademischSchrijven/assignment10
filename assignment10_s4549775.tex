@@ -48,9 +48,7 @@ Today it is one of the industry standards for Computer Vision, used and sponsore
 OpenCV is highly optimized and geared towards real time systems \cite{aboutOpenCV}. This is important for many applications in automation. Your car must be able to process visual information in real time to avoid collisions, for example.
 For our purposes this is not of great importance but it is nice to be able to visualize the algorithms working. Quicker response times are also generally nice.
 
-The OpenCV API provides facilities for image (pre)processing, persistence, clustering, hight-level GUI, video analysis, camera calibration, 2d-feature extraction, object detection, Machine Learning, GPU acceleration, computational photography, image stitching, OpenCL acceleration, super resolution, 3d-visualization and even some non-free components \cite{openCVNonFree}.
-
-In addition to that there are some deprecated modules and experimental / contributed functionality. \cite{openCVRefMan}
+The OpenCV API provides a broad range of features, a list of which can be found on their website \cite{openCVRefMan}. This includes some non-free components \cite{openCVNonFree}, as well as deprecated modules and experimental / contributed functionality.
 
 \section{Solution}
 \subsection{Preprocessing}
@@ -214,6 +212,15 @@ Do not focus too much on the choice of languages though, not even the choice of 
 		\paragraph{after} We expected there to be some prebuilt functionality for something as mundane as detecting an arrow but that was not the case.
 	\end{multicols}
 	\item Do not use informal forms like "isn't".
+	\item Reference a list of features instead of enumerating them.
+
+	\begin{tabular}{p{.5\linewidth} p{.5\linewidth}}
+		\multicolumn{1}{c}{\textbf{before}} & \multicolumn{1}{c}{\textbf{after}}\\
+		The OpenCV API provides facilities for image (pre)processing, persistence, clustering, hight-level GUI, video analysis, camera calibration, 2d-feature extraction, object detection, Machine Learning, GPU acceleration, computational photography, image stitching, OpenCL acceleration, super resolution, 3d-visualization and even some non-free components \cite{openCVNonFree}.
+
+		In addition to that there are some deprecated modules and experimental / contributed functionality. \cite{openCVRefMan}&
+		The OpenCV API provides a broad range of features, a list of which can be found on their website \cite{openCVRefMan}. This includes some non-free components \cite{openCVNonFree}, as well as deprecated modules and experimental / contributed functionality.\\
+	\end{tabular}
 \end{itemize}
 
 \end{document}
